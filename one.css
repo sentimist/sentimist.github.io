@@ -6,7 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f9e3e3;
-    font-family: 'Arial', sans-serif;
+    font-family: 'dancing script', sans-serif;
   }
   
   .container {
@@ -108,7 +108,7 @@ body {
     margin: 0;
     font-size: 16px;
     color: #ff6f61;
-    font-family: 'Arial', sans-serif;
+    font-family: 'dancing script', sans-serif;
 }
 
 .folder-icon:hover {
@@ -219,7 +219,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
-    font-family: 'Arial', sans-serif;
+    font-family: 'dancing script', sans-serif;
     overflow: hidden;
     position: relative;
 }
