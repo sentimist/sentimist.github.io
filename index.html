@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Day Card</title>
+  <link rel="stylesheet" href="one.css">
+  <link rel="stylesheet" href="one(2).css">
+  
+</head>
+<body>
+
+<!-- Pop-up Container -->
+<div class="popup-container" id="popupContainer">
+    <div class="popup">
+        <h2 id="questionText">Are you my Diza Socito the cutest?</h2>
+        <div class="buttons">
+            <button id="yesButton">Yes</button>
+            <button id="noButton">No</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+  <div class="container">
+    <div id="initial-popup" class="popup">
+    </div>
+    <div id="card" class="card closed">
+      <div class="card-front">
+        <h1>Happy Valentine's Day!</h1>
+        <p>Click to open the card</p>
+      </div>
+      <div class="card-inside">
+        <p>My Dearest Love,</p>
+        <p>
+          On this special day, I want to take a moment to express how much you mean to me. 
+          You are my sunshine on a cloudy day, my rock when I need support, and my greatest joy in life. 
+          Every moment with you is a treasure, and I am so grateful to have you in my life. 
+          I love you more than words can ever express, and I look forward to creating many more beautiful memories with you. 
+          Happy Valentine's Day, my love!
+        </p>
+        <p>Forever yours,</p>
+        <p>[Your Name]</p>
+      </div>
+    </div>
+  </div>
+
+    <!-- Audio element for background music -->
+    <audio id="background-music" loop>
+        <source src="edited.mp3" type="audio/mpeg">
+        <source src="edited.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        document.addEventListener('click', function() {
+            var audio = document.getElementById('background-music');
+            audio.play();
+        });
+    </script>
+    <script>
+        function toggleMemories() {
+            const memoriesSection = document.getElementById('memoriesSection');
+            memoriesSection.classList.toggle('active');
+        }
+    </script>
+  <script src="only g.js"></script>
+</body>
+</html>
+
+<!-- Folder Icon to Open Memories -->
+<div class="folder-icon" onclick="toggleMemories()">
+    <span>💌</span> <!-- You can replace this with a custom icon -->
+    <p>open it bbg</p>
+</div>
+
+<!-- Memories Section -->
+<div class="memories-section" id="memoriesSection">
+    <h2>lyrics that reminded me of you</h2>
+    <div class="gallery">
+        <div class="photo-frame" onclick="openModal('memory1.jpg')">
+            <img src="nothing.jpg" alt="Memory 1">
+        </div>
+        <div class="photo-frame" onclick="openModal('memory2.jpg')">
+            <img src="meyou.jpg" alt="Memory 2">
+        </div>
+        <div class="photo-frame" onclick="openModal('memory3.jpg')">
+            <img src="lego.jpg" alt="Memory 3">
+        </div>
+        <div class="photo-frame" onclick="openModal('memory4.jpg')">
+            <img src="soft.jpg" alt="Memory 4">
+        </div>
+        <div class="photo-frame" onclick="openModal('memory5.jpg')">
+            <img src="love.jpg" alt="Memory 5">
+        </div>
+        <div class="photo-frame" onclick="openModal('memory6.jpg')">
+            <img src="mundo.jpg" alt="Memory 6">
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Full-Size Image -->
+<div class="modal" id="imageModal" onclick="closeModal()">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+<script src="only g.js"></script>
+    
+
+<!-- Floating Hearts -->
+<div class="heart" style="top: 10%; left: 20%; animation-delay: 0s;"></div>
+<div class="heart" style="top: 30%; left: 50%; animation-delay: 2s;"></div>
+<div class="heart" style="top: 50%; left: 80%; animation-delay: 4s;"></div>
+<div class="heart" style="top: 70%; left: 10%; animation-delay: 1s;"></div>
+<div class="heart" style="top: 90%; left: 40%; animation-delay: 3s;"></div>
+
+<!-- Floating Sparkles -->
+<div class="sparkle" style="top: 15%; left: 70%; animation-delay: 0.5s;"></div>
+<div class="sparkle" style="top: 25%; left: 30%; animation-delay: 1.5s;"></div>
+<div class="sparkle" style="top: 45%; left: 60%; animation-delay: 2.5s;"></div>
+<div class="sparkle" style="top: 65%; left: 20%; animation-delay: 3.5s;"></div>
+<div class="sparkle" style="top: 85%; left: 90%; animation-delay: 4.5s;"></div>
+</body>
+</html>
